@@ -61,8 +61,8 @@ def balance(update: Update, context: CallbackContext):
     cursor.execute("SELECT balance FROM users WHERE user_id = ?", (user_id,))
     row = cursor.fetchone()
     bal = row[0] if row else 0
-    msg = f"👛 Твій баланс: {bal} грн
-"
+    msg = f"🧡 Твій баланс: {bal} грн"
+
     if bal >= WITHDRAW_LIMIT:
         msg += "✅ Ти можеш вивести кошти. Надішли /withdraw"
     else:
