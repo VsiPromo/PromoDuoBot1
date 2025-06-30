@@ -1,7 +1,7 @@
+# -*- coding: utf-8 -*-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, CallbackContext, MessageHandler, Filters, CallbackQueryHandler
 import sqlite3
-
 # === Налаштування ===
 TOKEN = '8184241735:AAFR2l26xI1U_GOh39RCPX5hBtvGnsUAIuQ'
 CHANNELS = ['@Vsi_PROMO', '@uaclub_casinoman']
