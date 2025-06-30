@@ -52,7 +52,8 @@ def start(update: Update, context: CallbackContext):
 
     context.bot.send_message(chat_id=user_id, text=f"Привіт, {user.first_name}!")
 Запрошуй друзів та отримуй по 4 грн за кожного!
-Твоє посилання: https://t.me/PromoDuoBot?start={user_id}")
+context.bot.send_message(chat_id=user_id, text=f"Твоє посилання: https://t.me/PromoDuoBot?start={user_id}")
+
 
 # === /balance ===
 def balance(update: Update, context: CallbackContext):
